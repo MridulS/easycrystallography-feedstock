@@ -12,7 +12,7 @@ source:
   sha256: 228657b14992bd2cb4d28381f1b03c1b070dd7c3df3a65f577cd1c2a6fed7c36
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -33,7 +33,6 @@ tests:
   - python:
       imports:
         - easycrystallography
-      pip_check: false
       python_version: ${{ python_min }}.*
 
 about:
